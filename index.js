@@ -1,6 +1,6 @@
 const express = require("express"); //importa o módulo express neste arquivo
 const app = express(); //iniciando o express
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 //criando a rota inicial
 app.get("/", function(req,res){
@@ -44,6 +44,7 @@ app.get("/cadastro/{:nome}", function(req,res){
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
 
 
 
